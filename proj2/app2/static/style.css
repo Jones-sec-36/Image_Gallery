@@ -1,0 +1,42 @@
+/* Apply box-sizing for consistent padding/margin */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Background color */
+    color: gold; /* Text color */
+    font-family: 'Cursive', Arial, sans-serif; /* Cursive font fallback */
+    text-align: center;
+}
+
+header {
+    font-size: 48px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin: 20px 0;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 40px; /* Space between images */
+    padding: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.gallery-container img {
+    height: 150px; /* Fixed height for images */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: gold;
+    background-color: #222;
+}
